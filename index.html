@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div ng-controller="nameOfController">
+      {{ info }}
+      <div ng-controller="otherController as oc">
+        {{ oc.info }}
+            <button ng-click="noc.change(oc.info)">Magic!</button>
+      </div>
+    </div>
+
+
+    <comp></comp>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
